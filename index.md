@@ -102,3 +102,16 @@ ___
 StartTyping();
 })();
 </script>
+
+___
+
+<div class="copyright" align="center">
+  <script>
+    document.write('&copy;' );
+    document.write(' 2021 - ');
+    document.write(new Date().getFullYear());
+    document.write(' edz - All Rights Reserved.');
+    document.write('<br/>Last Updated : ');
+    document.write(document.lastModified);
+  </script>
+</div>
