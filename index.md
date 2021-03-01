@@ -73,7 +73,7 @@
    var NxtMsgDelay = 1000;
    var MsgIndex = 0;
    var delay;
-   var MsgArray = ["Мы работаем для:","Уфы-","Лицея №94-","2-го этажа-","202 кабинета!","Наша команда состоит из:","Григория","И","Руслана"];
+   var MsgArray = ["Мы работаем для:","202 кабинета!","Наша команда состоит из:","Григория","И","Руслана"];
 
    function StartTyping() {
       var id = document.getElementById("typing-text");
