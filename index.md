@@ -35,7 +35,7 @@
   .MyMarquee {
      text-align: center;
      font-weight: bold;
-     max-width: 100%;
+     width: 300px;
      height: 100%;
      font-size: 25px;
      border: 1px solid transparent;
