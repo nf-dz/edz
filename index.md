@@ -9,7 +9,28 @@
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
+ #typing-text {
+     color: #246904;
+     border: solid 1px #A8A8A8;
+     font-weight: bold;
+     text-align: left;
+     font-family: Arial, Helvetica, sans-serif;
+     overflow: auto;
+     background-color: transparent;
+     font-size: 15px;
+     padding: 5px;
+     height: 30px;
+     max-width: 100%;
+     outline: none;
+     resize: none;
+     box-sizing: border-box;
+}
+
 </style>
+
+<textarea id="typing-text" readonly></textarea>
+
+
 <table class="tg">
 <thead>
   <tr>
@@ -44,3 +65,36 @@
   </tr>
 </tbody>
 </table>
+<script>
+(function () {
+   var CharacterPos = 0;
+   var MsgBuffer = "";
+   var TypeDelay = 100; 
+   var NxtMsgDelay = 1000;
+   var MsgIndex = 0;
+   var delay;
+   var MsgArray = ["Мы работаем для:","Уфы-","Лицея №94-","2-го этажа-","202 кабинета!","Наша команда состоит из:","Григория","И","Руслана"];
+
+   function StartTyping() {
+      var id = document.getElementById("typing-text");
+      if (CharacterPos != MsgArray[MsgIndex].length) {
+         MsgBuffer  = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
+         id.value = MsgBuffer+"_";
+         delay = TypeDelay;
+         id.scrollTop = id.scrollHeight; 
+      } else {
+         delay = NxtMsgDelay;
+         MsgBuffer   = "";
+         CharacterPos = -1;
+         if (MsgIndex!=MsgArray.length-1){
+           MsgIndex++;
+         }else {
+           MsgIndex = 0;
+         }
+       }
+       CharacterPos++;
+       setTimeout(StartTyping,delay);
+   }
+StartTyping();
+})();
+</script>
