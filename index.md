@@ -35,10 +35,10 @@
   .MyMarquee {
      text-align: center;
      font-weight: bold;
-     width: 100%;
+     max-width: 100%;
      height: 100%;
      font-size: 25px;
-     border: 1px solid #8C8C8C;
+     border: 1px solid transparent;
      color: #0e6b00;
      font-family: Arial, Helvetica, sans-serif;
      vertical-align: middle;
