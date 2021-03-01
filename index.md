@@ -48,6 +48,10 @@ ___
     <td class="tg-baqh">5</td>
   </tr>
   <tr>
+    <td class="tg-0lax">Обществознание</td>
+    <td class="tg-baqh">5</td>
+  </tr>
+  <tr>
     <td class="tg-0lax">Русский</td>
     <td class="tg-baqh">4</td>
   </tr>
