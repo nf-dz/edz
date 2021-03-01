@@ -19,7 +19,7 @@
      background-color: transparent;
      font-size: 15px;
      padding: 5px;
-     height: 30px;
+     height: 40px;
      max-width: 100%;
      outline: none;
      resize: none;
