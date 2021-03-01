@@ -158,16 +158,16 @@ ___
 <input type="button" id="show_hide_button" value="Показать" onclick="ShowHide();">
 
 <div id="show_hide_content" style="display: none;">
-### слии вы впервые у нас, скидка - 10%
+### Если вы впервые у нас, скидка - 10%
  <div class="Marquee-box">
    <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
      <div>Приведи друга, и получи скидку 15%</div>
    </marquee>
  </div>
- </div>
 
 
 ###### *Скидки действуют на одну транзакцию
+</div>
 <script>
   var message="Запрещаю Сохранять что-либо!!!";
   function clickIE4(){
