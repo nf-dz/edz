@@ -26,6 +26,40 @@
      resize: none;
      box-sizing: border-box;
 }
+  .Marquee-box {
+     position: relative;
+     display: inline-block;
+     width: 500px;
+     height: 80px;
+  }
+  .MyMarquee {
+     text-align: center;
+     font-weight: bold;
+     width: 100%;
+     height: 100%;
+     font-size: 25px;
+     border: 1px solid #8C8C8C;
+     color: #0e6b00;
+     font-family: Arial, Helvetica, sans-serif;
+     vertical-align: middle;
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+     background-color: transparent;
+
+     text-shadow: 2px 2px 2px #A3A3A3;
+  }
+  .MyMarquee div {
+     display: inline-block;
+     vertical-align: middle;
+  }
+  .MyMarquee a, .MyMarquee img {
+     display: inline-block;
+     text-decoration: underline;
+     color: #0e6b00;
+     vertical-align: middle;
+  }
+
 
 </style>
 <br>
@@ -113,7 +147,13 @@ ___
 <br>
 ## Скидки*
 ### слии вы впервые у нас, скидка - 10%
-### Приведите друга, и получите скидку - 15%
+ <div class="Marquee-box">
+   <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+     <div>Приведи друга, и получи скидку 15%</div>
+   </marquee>
+ </div>
+
+
 ###### *Скидки действуют на одну транзакцию
 <script>
   var message="Запрещаю Сохранять что-либо!!!";
