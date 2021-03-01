@@ -8,7 +8,7 @@
 .tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
-<table class="tg">
+<table class="tg" align="center">
 <thead>
   <tr>
     <th class="tg-baqh">Предмет</th>
