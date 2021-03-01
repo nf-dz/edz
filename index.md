@@ -59,6 +59,15 @@
      color: #0e6b00;
      vertical-align: middle;
   }
+ #show_hide_content {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border: solid 0px transparent;
+    padding: 5px;
+    background-color: #FFFFFF;
+    overflow: auto;
+ }
 
 
 </style>
@@ -146,11 +155,15 @@ ___
 
 <br>
 ## Скидки*
+<input type="button" id="show_hide_button" value="Показать" onclick="ShowHide();">
+
+<div id="show_hide_content" style="display: none;">
 ### слии вы впервые у нас, скидка - 10%
  <div class="Marquee-box">
    <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
      <div>Приведи друга, и получи скидку 15%</div>
    </marquee>
+ </div>
  </div>
 
 
@@ -194,4 +207,18 @@ ___
     document.write('<br/>Last Updated : ');
     document.write(document.lastModified);
   </script>
+<script>
+ function ShowHide(){
+    var buttonName = document.getElementById('show_hide_button');
+    var shContent = document.getElementById("show_hide_content");
+   if(buttonName.value == 'Показать'){
+       buttonName.value = 'Скрыть';
+       shContent.style.display = 'block';
+     }else{
+       buttonName.value = 'Показать';
+       shContent.style.display = 'none';
+   }
+ }
+
+</script>
 </div>
