@@ -2,6 +2,23 @@
 #### Только проверенная домашняя работа
 #### Проверено проффесионалами в домашней работе
 
+<script>
+  function disableselect(e){  
+     return false  
+  }  
+
+  function reEnable(){  
+     return true  
+  }  
+
+//if IE4+  
+   document.oncontextmenu=new Function ("return false")  
+//if NS6  
+  if (window.sidebar){  
+     document.onmousedown=disableselect  
+     document.onclick=reEnable  
+}  
+ </script> 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -162,33 +179,6 @@ ___
    </marquee>
  </div>
 ###### *Скидки действуют на одну транзакцию
-<script>
-  var message="Запрещаю Сохранять что-либо!!!";
-  function clickIE4(){
-     if (event.button==2){
-           alert(message);
-           return false;
-        }
-  }
-
-   function clickNS4(e){
-     if (document.layers||document.getElementById&&!document.all){
-         if (e.which==2||e.which==3){
-           alert(message);
-           return false;
-          }
-      }
-    }
-
-   if (document.layers){
-       document.captureEvents(Event.MOUSEDOWN);
-       document.onmousedown=clickNS4;
-   } else if (document.all&&!document.getElementById){
-       document.onmousedown=clickIE4;
-   }
-
-   document.oncontextmenu=new Function("alert(message);return false")
- </script> 
 
 ___
 
@@ -215,21 +205,4 @@ ___
  }
 
 </script>
-<script>
-  function disableselect(e){  
-     return false  
-  }  
-
-  function reEnable(){  
-     return true  
-  }  
-
-//if IE4+  
-   document.oncontextmenu=new Function ("return false")  
-//if NS6  
-  if (window.sidebar){  
-     document.onmousedown=disableselect  
-     document.onclick=reEnable  
-}  
- </script> 
 </div>
