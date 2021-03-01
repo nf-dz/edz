@@ -29,7 +29,7 @@
   .Marquee-box {
      position: relative;
      display: inline-block;
-     width: 500px;
+     width: 300px;
      height: 80px;
   }
   .MyMarquee {
