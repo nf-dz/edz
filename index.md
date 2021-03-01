@@ -154,10 +154,7 @@ StartTyping();
 ___
 
 <br>
-## Скидки*
-<input type="button" id="show_hide_button" value="Показать" onclick="ShowHide();">
-
-<div id="show_hide_content" style="display: none;">
+# Скидки*
 ### Если вы впервые у нас, скидка - 10%
  <div class="Marquee-box">
    <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
@@ -167,7 +164,6 @@ ___
 
 
 ###### *Скидки действуют на одну транзакцию
-</div>
 <script>
   var message="Запрещаю Сохранять что-либо!!!";
   function clickIE4(){
