@@ -19,8 +19,8 @@
      background-color: transparent;
      font-size: 15px;
      padding: 5px;
-     height: 40px;
-     max-width: 100%;
+     height: 30px;
+     width: 500px;
      outline: none;
      resize: none;
      box-sizing: border-box;
