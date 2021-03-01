@@ -11,7 +11,7 @@
 .tg .tg-0lax{text-align:left;vertical-align:top}
  #typing-text {
      color: #246904;
-     border: solid 1px #A8A8A8;
+     border: solid 1px transparent;
      font-weight: bold;
      text-align: left;
      font-family: Arial, Helvetica, sans-serif;
