@@ -21,7 +21,7 @@
      font-size: 15px;
      padding: 5px;
      height: 30px;
-     width: 450px;
+     width: 300px;
      outline: none;
      resize: none;
      box-sizing: border-box;
